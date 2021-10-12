@@ -12,11 +12,11 @@ namespace BehaviorDesigner.Runtime.Tasks.Unity.UnityGameObject
         public override TaskStatus OnUpdate()
         {
             var destroyGameObject = GetDefaultGameObject(targetGameObject.Value);
-            GameObject.DestroyImmediate(destroyGameObject);
-
+            GameObject.DestroyImmediate(destroyGameObject,true);
+                                       
             return TaskStatus.Success;
         }
-
+         
         public override void OnReset()
         {
             targetGameObject = null;

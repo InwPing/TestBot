@@ -21,7 +21,15 @@ namespace BehaviorDesigner.Runtime.Tasks.Unity.UnityGameObject
             }
 
             return TaskStatus.Success;
-        }
+        } 
+
+        /*private void OnCollisionEnter(Collision collision)
+        {
+            if (collision.gameObject.tag == ("AgentB"))
+            {
+                GameObject.DestroyImmediate(collision.gameObject);
+            }
+        }*/
 
         public override void OnReset()
         {

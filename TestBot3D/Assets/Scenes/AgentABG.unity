@@ -232,7 +232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee7e44af76893f041b0e540a95a3166e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numberAgentA: 0
+  numberAgentA: 2
   numberAgentB: 10
   numberAgentG: 1
   prefabAgentA: {fileID: 1993632674794694054, guid: 8774ae9e6de58714e81fad595e494e5d, type: 3}

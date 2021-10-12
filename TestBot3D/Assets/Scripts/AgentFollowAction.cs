@@ -60,6 +60,7 @@ namespace BehaviorDesigner.Runtime.Tasks.AgentSystem
 
 
             return TaskStatus.Running;
+            
         }
 
         public override void OnReset()
