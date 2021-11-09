@@ -232,9 +232,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee7e44af76893f041b0e540a95a3166e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numberAgentA: 0
+  numberAgentA: 2
   numberAgentB: 10
-  numberAgentG: 1
+  numberAgentG: 3
   prefabAgentA: {fileID: 1993632674794694054, guid: 8774ae9e6de58714e81fad595e494e5d, type: 3}
   prefabAgentB: {fileID: 1866876763104823945, guid: 145847219e986a04db0dc07ad4fa335d, type: 3}
   prefabAgentG: {fileID: 8979401456678830818, guid: 87174470f0c05164d8cd363e2b0e14e8, type: 3}

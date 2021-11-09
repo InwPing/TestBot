@@ -14,8 +14,10 @@ namespace BehaviorDesigner.Runtime.Tasks.Movement
         public SharedGameObject targetObject;
         [Tooltip("The objects that we are searching for")]
         public SharedGameObjectList targetObjects;
+
         [Tooltip("The tag of the object that we are searching for")]
         public SharedString targetTag;
+
         [Tooltip("The LayerMask of the objects that we are searching for")]
         public LayerMask objectLayerMask;
         [Tooltip("If using the object layer mask, specifies the maximum number of colliders that the physics cast can collide with")]

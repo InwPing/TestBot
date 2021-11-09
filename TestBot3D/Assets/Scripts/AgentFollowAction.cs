@@ -41,7 +41,7 @@ namespace BehaviorDesigner.Runtime.Tasks.AgentSystem
                 if (toward.magnitude < touchedDist.Value)
                 {
                     return TaskStatus.Success;
-                }
+                }                           
 
                 if (toward.magnitude < search.Value)
                 {
