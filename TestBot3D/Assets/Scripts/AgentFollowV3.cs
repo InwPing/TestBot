@@ -61,7 +61,9 @@ namespace BehaviorDesigner.Runtime.Tasks.AgentSystem
                 Vector3 toward = targetPos - currentPos;
                 if (toward.magnitude < touchedDist.Value)
                 {
-                    
+                    var destroyGameObject = GetDefaultGameObject(closest);
+                    GameObject.DestroyImmediate(destroyGameObject, true);
+
                     return TaskStatus.Success;
                 }
 
@@ -70,26 +72,7 @@ namespace BehaviorDesigner.Runtime.Tasks.AgentSystem
                     dir += toward;
                 }
             }
-            /* Vector3 dir = Vector3.zero;
-             Vector3 closestVec = closest.transform.position;
-
-             foreach (Vector3 targetPos in closestVec)
-             {
-
-                 Vector3 targetPos = targetObject.transform.position;
-                 Vector3 currentPos = transform.position;
-
-                 Vector3 toward = targetPos - currentPos;
-                 if (toward.magnitude < touchedDist.Value)
-                 {
-                     return TaskStatus.Success;
-                 }
-
-                 if (toward.magnitude < search.Value)
-                 {
-                     dir += toward;
-                 }
-             }*/
+           
              dir.Normalize();
 
              dir = dir * speed.Value * Time.deltaTime;

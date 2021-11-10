@@ -8,9 +8,7 @@ public class Counter : MonoBehaviour
 	public BehaviorTree behaviorTree;
 	public TextMesh counterText;
 
-	public int numberAgentA;
-	public GameObject prefabAgentA;
-
+	
 
 	// Use this for initialization
 	void Start()
